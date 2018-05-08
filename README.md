@@ -60,4 +60,19 @@ implementation 'com.github.iflytek-duan:iFlyShare:3.1.0'
       android:screenOrientation="portrait"
       android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
   ```
-  > 注意：这里要填入正确的tencent+appId。
+  ** 注意：这里要填入正确的tencent+appId。**
+  - 在QQ分享相关Activity中添加以下代码
+  ```java
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Tencent.onActivityResultData(requestCode, resultCode, data, mIUiListener);
+        if (requestCode == Constants.REQUEST_API) {
+            if (resultCode == Constants.REQUEST_QQ_SHARE
+                    || resultCode == Constants.REQUEST_QZONE_SHARE
+                    || resultCode == Constants.REQUEST_OLD_SHARE) {
+                Tencent.handleResultData(data, mIUiListener);
+            }
+        }
+    }
+  ```
