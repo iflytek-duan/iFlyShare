@@ -60,7 +60,7 @@ implementation 'com.github.iflytek-duan:iFlyShare:3.1.0'
       android:screenOrientation="portrait"
       android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
   ```
-    ** 注意：这里要填入正确的tencent+appId。**
+  > 注意：这里要填入正确的tencent+appId。
 - 在QQ分享相关Activity中添加以下代码
   ```java
     @Override
