@@ -11,6 +11,21 @@
 
 **使用方式：**
 
+- 在根目录的build.gradle中添加jitPack配置：
+```java
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+- 在module的build.gradle中执行implementation依赖添加操作：
+```java
+implementation 'com.github.iflytek-duan:iFlyShare:3.0.2'
+```
+
 - 在app的AndroidManifest.xml中添加以下内容
   - 添加权限
   ```java
@@ -46,8 +61,3 @@
       android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
   ```
   > 注意：这里要填入正确的tencent+appId。
-
-- 在module的build.gradle中执行implementation操作
-```java
-implementation ''
-```
