@@ -23,7 +23,7 @@ allprojects {
 
 - 在module的build.gradle中执行implementation依赖添加操作：
 ```java
-implementation 'com.github.iflytek-duan:iFlyShare:3.0.2'
+implementation 'com.github.iflytek-duan:iFlyShare:3.1.0'
 ```
 
 - 在app的AndroidManifest.xml中添加以下内容
