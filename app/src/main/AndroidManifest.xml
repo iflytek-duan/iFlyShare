@@ -37,7 +37,8 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
 
-                <data android:scheme="tencent1106862128"/>
+                <!-- 这里应该填入tencent+您的appId，如appId为123456，则应该填入tencent123456 -->
+                <data android:scheme="tencent123456"/>
             </intent-filter>
         </activity>
         <activity
