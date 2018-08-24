@@ -1,7 +1,10 @@
 # iFlyShare
 
 **更新日志**
-- v3.0 2018/05/08 全新QQ、微信分享功能集成。**[提示：IWXAPI.~~isWXAppSupportAPI()~~方法已移除]**
+- v3.0 2018/05/08 全新QQ、微信分享功能集成。
+  **【提示：微信分享IWXAPI变更**
+  ~~IWXAPI.isWXAppSupportAPI()~~
+  **方法已移除】**
 ---
 
 **使用说明**
